@@ -1,0 +1,54 @@
+nav {
+  background-color: chocolate;
+  color: cornsilk;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  z-index: 10;
+  transition: left .5s ease-in-out;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav a {
+  color: cornsilk;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  display: block;
+  border-bottom: 1px solid cornsilk;
+}
+
+nav a.active {
+  padding: 1em 1.5em;
+  border-left: .7em solid cornsilk;
+  border-right: .7em solid cornsilk;
+}
+
+#menuSwitcher {
+  display: none;
+}
+
+#menuSwitcher:checked ~ nav {
+  left: 100vw;
+}
+
+.haal-menu {
+  font-size: 1.5em;
+  padding: .5em .5em;
+  display: block;
+  border-bottom: 2px solid cornsilk;
+}
+
+.haalmenu {
+  font-size: 1.5em;
+  padding: .5em 1rem;
+  display: block;
+  border-bottom: 2px solid white;
+  text-align: right;
+}
+
